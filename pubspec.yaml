@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
 
   url_launcher: ^6.3.2
+  iconsax_flutter: ^1.0.1
+  font_awesome_flutter: ^10.12.0
 
 dev_dependencies:
   flutter_test:
