@@ -260,7 +260,7 @@ class _MainPageState extends State<MainPage> {
                     mainAxisSpacing: 16,
                     childAspectRatio: 1.25,
                   ),
-                  itemCount: 20,
+                  itemCount: 5,
                   itemBuilder: (context, index) {
                     return Container(
                       padding: const EdgeInsets.all(16),
@@ -311,6 +311,177 @@ class _MainPageState extends State<MainPage> {
                       ),
                     );
                   },
+                ),
+              ],
+            ),
+            const SizedBox(height: 40),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              spacing: 16,
+              children: [
+                const Text(
+                  'Experience',
+                  style: TextStyle(
+                    fontSize: 32,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    IntrinsicHeight(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              // Icon(Icons.circle, size: 50, color: const Color(0xff447EC3)),
+                              Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xff447EC3),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: const Color(0xff142B49),
+                                    width: 5,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  width: 3,
+                                  color: const Color(0xff447EC3),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(width: 16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.min,
+                              spacing: 4,
+                              children: [
+                                Text(
+                                  'Flutter Engineer',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                Text(
+                                  'Company Name - Jan 2020 to Present',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: const Color(0xff85888F),
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                Text(
+                                  '- Developed and maintained multiple cross-platform applications using Flutter, resulting in a 30% increase in user engagement.',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: const Color(0xff85888F),
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                Text(
+                                  '- Implemented Clean Architecture and BLoC state management, improving code maintainability and scalability.',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: const Color(0xff85888F),
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                const SizedBox(height: 16),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    IntrinsicHeight(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              // Icon(Icons.circle, size: 50, color: const Color(0xff447EC3)),
+                              Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xff447EC3),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: const Color(0xff142B49),
+                                    width: 5,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  width: 3,
+                                  color: const Color(0xff202E49),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(width: 16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.min,
+                              spacing: 4,
+                              children: [
+                                Text(
+                                  'Flutter Engineer',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                Text(
+                                  'Company Name - Jan 2020 to Present',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: const Color(0xff85888F),
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                Text(
+                                  '- Developed and maintained multiple cross-platform applications using Flutter, resulting in a 30% increase in user engagement.',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: const Color(0xff85888F),
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                Text(
+                                  '- Implemented Clean Architecture and BLoC state management, improving code maintainability and scalability.',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: const Color(0xff85888F),
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
